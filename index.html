@@ -3,220 +3,206 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>
-   Ingeniería de Software - UCompensar
+   Mi Hoja de Vida - Andres Fernando Grijalba
   </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
   <style>
    body {
             font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
         }
-        header {
-            background-color: #003366;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
+        .bg-telecom {
+            background-image: url('https://storage.googleapis.com/a1aa/image/8xSfbZ8xX8zqHSOU2A0IsjgFWFIpQnLyMLcl7mh9U6QGUW5JA.jpg');
+            background-size: cover;
+            background-position: center;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        nav {
-            background-color: #00509e;
-            overflow: hidden;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2em;
-            padding: 15px 0;
-            display: block;
-        }
-        nav ul li a:hover {
-            background-color: #003366;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .hero {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .hero img {
-            max-width: 100%;
-            height: auto;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .content .main {
-            flex: 3;
-            padding: 20px;
-        }
-        .content .sidebar {
-            flex: 1;
-            padding: 20px;
-            background-color: #f9f9f9;
-            margin-left: 20px;
-        }
-        .content h2 {
-            color: #003366;
-        }
-        .content p {
-            line-height: 1.6;
-        }
-        .footer {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
+        .bg-overlay {
+            background: rgba(0, 0, 0, 0.6);
         }
   </style>
  </head>
- <body>
-  <header>
-   <h1>
-    Ingeniería de Software
-   </h1>
-  </header>
-  <nav>
-   <ul>
-    <li>
-     <a href="#">
-      Inicio
-     </a>
-    </li>
-    <li>
-     <a href="#">
-      Programas
-     </a>
-    </li>
-    <li>
-     <a href="#">
-      Admisiones
-     </a>
-    </li>
-    <li>
-     <a href="#">
-      Contacto
-     </a>
-    </li>
-   </ul>
-  </nav>
-  <div class="container">
-   <div class="hero">
-    <img alt="Imagen de estudiantes de ingeniería de software trabajando en un proyecto colaborativo en un aula moderna" height="400" src="https://storage.googleapis.com/a1aa/image/xtdeRO21ct06F6vujsUMGjRFnfo7xCu08IKtbzcAAP0HRrvTA.jpg" width="1200"/>
+ <body class="bg-gray-100 text-gray-800">
+  <header class="bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg">
+   <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+    <h1 class="text-3xl font-bold">
+     Mi Hoja de Vida
+    </h1>
+    <nav>
+     <ul class="flex space-x-4">
+      <li>
+       <a class="hover:text-gray-200" href="#about">
+        Sobre Mí
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-gray-200" href="#experience">
+        Experiencia
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-gray-200" href="#education">
+        Educación
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-gray-200" href="#skills">
+        Habilidades
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-gray-200" href="#contact">
+        Contacto
+       </a>
+      </li>
+     </ul>
+    </nav>
    </div>
-   <div class="content">
-    <div class="main">
-     <h2>
-      Descripción del Programa
-     </h2>
-     <p>
-      El programa de Ingeniería de Software de UCompensar está diseñado para formar profesionales con habilidades técnicas y de gestión para el desarrollo de software de alta calidad. Los estudiantes aprenderán sobre programación, bases de datos, ingeniería de requisitos, diseño de software, pruebas y aseguramiento de la calidad, entre otros temas.
-     </p>
-     <h2>
-      Plan de Estudios
-     </h2>
-     <p>
-      El plan de estudios está compuesto por una serie de asignaturas que cubren tanto los fundamentos teóricos como las aplicaciones prácticas de la ingeniería de software. A continuación, se presenta una lista de algunas de las asignaturas que se ofrecen:
-     </p>
-     <ul>
+  </header>
+  <main class="container mx-auto px-4 py-8 bg-telecom bg-overlay text-white">
+   <section class="mb-12" id="about">
+    <div class="bg-white p-6 rounded-lg shadow-lg flex items-center text-gray-800">
+     <img alt="Imagen de un router moderno con múltiples antenas y luces LED" class="w-32 h-32 rounded-full mr-6" height="150" src="https://storage.googleapis.com/a1aa/image/q4ywRVCexT13dKFBGfsd0e5royxJQWoPQ99DNsJZgzOnbZlnA.jpg" width="150"/>
+     <div>
+      <h2 class="text-2xl font-bold mb-2">
+       Andres Fernando Grijalba
+      </h2>
+      <p class="text-gray-700">
+       Estudiante de ingeniería de sistemas, con 10 años de experiencia profesional en telecomunicaciones. Apasionado por la tecnología y el desarrollo de soluciones innovadoras.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="mb-12" id="experience">
+    <h2 class="text-2xl font-bold mb-4">
+     Experiencia
+    </h2>
+    <div class="bg-white p-6 rounded-lg shadow-lg text-gray-800">
+     <div class="mb-6">
+      <h3 class="text-xl font-bold">
+       Profesional en Telecomunicaciones en Empresa XYZ
+      </h3>
+      <p class="text-gray-600">
+       Enero 2013 - Presente
+      </p>
+      <ul class="list-disc list-inside text-gray-700">
+       <li>
+        Gestión y mantenimiento de redes de telecomunicaciones.
+       </li>
+       <li>
+        Implementación de soluciones de telecomunicaciones para clientes corporativos.
+       </li>
+       <li>
+        Supervisión de proyectos de infraestructura de telecomunicaciones.
+       </li>
+      </ul>
+     </div>
+     <div class="mb-6">
+      <h3 class="text-xl font-bold">
+       Técnico en Telecomunicaciones en Empresa ABC
+      </h3>
+      <p class="text-gray-600">
+       Junio 2010 - Diciembre 2012
+      </p>
+      <ul class="list-disc list-inside text-gray-700">
+       <li>
+        Instalación y configuración de equipos de telecomunicaciones.
+       </li>
+       <li>
+        Soporte técnico a clientes en el área de telecomunicaciones.
+       </li>
+       <li>
+        Mantenimiento preventivo y correctivo de sistemas de telecomunicaciones.
+       </li>
+      </ul>
+     </div>
+    </div>
+   </section>
+   <section class="mb-12" id="education">
+    <h2 class="text-2xl font-bold mb-4">
+     Educación
+    </h2>
+    <div class="bg-white p-6 rounded-lg shadow-lg text-gray-800">
+     <div class="mb-6">
+      <h3 class="text-xl font-bold">
+       Ingeniería de Sistemas
+      </h3>
+      <p class="text-gray-600">
+       Universidad de Ejemplo, 2018 - Presente
+      </p>
+     </div>
+     <div class="mb-6">
+      <h3 class="text-xl font-bold">
+       Técnico en Telecomunicaciones
+      </h3>
+      <p class="text-gray-600">
+       Instituto Técnico de Ejemplo, 2008 - 2010
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="mb-12" id="skills">
+    <h2 class="text-2xl font-bold mb-4">
+     Habilidades
+    </h2>
+    <div class="bg-white p-6 rounded-lg shadow-lg text-gray-800">
+     <ul class="list-disc list-inside text-gray-700">
       <li>
-       Introducción a la Programación
+       Gestión de Redes de Telecomunicaciones
       </li>
       <li>
-       Estructuras de Datos
+       Instalación y Configuración de Equipos
       </li>
       <li>
-       Ingeniería de Requisitos
+       Soporte Técnico
       </li>
       <li>
-       Diseño de Software
+       Desarrollo de Soluciones Innovadoras
       </li>
       <li>
-       Pruebas y Aseguramiento de la Calidad
-      </li>
-      <li>
-       Gestión de Proyectos de Software
-      </li>
-      <li>
-       Arquitectura de Software
-      </li>
-      <li>
-       Desarrollo de Aplicaciones Web
-      </li>
-      <li>
-       Desarrollo de Aplicaciones Móviles
-      </li>
-      <li>
-       Inteligencia Artificial
-      </li>
-      <li>
-       Seguridad Informática
-      </li>
-      <li>
-       Base de Datos
-      </li>
-      <li>
-       Redes de Computadoras
-      </li>
-      <li>
-       Computación en la Nube
-      </li>
-      <li>
-       Ética Profesional
+       Trabajo en Equipo
       </li>
      </ul>
     </div>
-    <div class="sidebar">
-     <h2>
-      Información de Contacto
-     </h2>
-     <p>
-      Para más información sobre el programa de Ingeniería de Software, puedes contactarnos a través de los siguientes medios:
-     </p>
-     <p>
-      <i class="fas fa-phone">
-      </i>
-      Teléfono: (1) 234 5678
-     </p>
-     <p>
-      <i class="fas fa-envelope">
-      </i>
-      Correo: info@ucompensar.edu.co
-     </p>
-     <p>
-      <i class="fas fa-map-marker-alt">
-      </i>
-      Dirección: Calle 123 #45-67, Bogotá, Colombia
-     </p>
+   </section>
+   <section class="mb-12" id="contact">
+    <h2 class="text-2xl font-bold mb-4">
+     Contacto
+    </h2>
+    <div class="bg-white p-6 rounded-lg shadow-lg text-gray-800">
+     <form action="#" method="POST">
+      <div class="mb-4">
+       <label class="block text-gray-700" for="name">
+        Nombre
+       </label>
+       <input class="w-full p-2 border border-gray-300 rounded mt-1" id="name" name="name" type="text"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700" for="email">
+        Correo Electrónico
+       </label>
+       <input class="w-full p-2 border border-gray-300 rounded mt-1" id="email" name="email" type="email"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700" for="message">
+        Mensaje
+       </label>
+       <textarea class="w-full p-2 border border-gray-300 rounded mt-1" id="message" name="message" rows="4"></textarea>
+      </div>
+      <button class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded hover:from-blue-600 hover:to-purple-700" type="submit">
+       Enviar
+      </button>
+     </form>
     </div>
+   </section>
+  </main>
+  <footer class="bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg mt-12">
+   <div class="container mx-auto px-4 py-6 text-center">
+    <p>
+     © 2023 Andres Fernando Grijalba. Todos los derechos reservados.
+    </p>
    </div>
-  </div>
-  <div class="footer">
-   <p>
-    © 2023 UCompensar. Todos los derechos reservados.
-   </p>
-  </div>
+  </footer>
  </body>
 </html>
